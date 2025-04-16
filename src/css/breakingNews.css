@@ -1,0 +1,22 @@
+.breaking-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 1.5rem 0;
+}
+.breaking-news span {
+  letter-spacing: 1.25px;
+  font-weight: 700;
+  color: rgb(203, 0, 36);
+  font-size: 12px;
+  padding: 0 1rem;
+}
+.breaking-news a {
+  font-size: 18px;
+}
+.breaking-news p {
+  font-size: 12px;
+  color: rgb(180, 0, 45);
+  margin: 0 0.5rem;
+}/*# sourceMappingURL=breakingNews.css.map */
