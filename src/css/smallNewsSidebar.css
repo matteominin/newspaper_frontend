@@ -1,0 +1,13 @@
+.small-news-sidebar {
+  border: 1px solid red;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.small-news-sidebar > .small-news:first-child {
+  margin-top: 0;
+}
+
+.small-news-sidebar > .small-news:last-child {
+  border-bottom: none;
+}/*# sourceMappingURL=smallNewsSidebar.css.map */

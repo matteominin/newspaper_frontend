@@ -1,11 +1,13 @@
 import '../css/breakingNews.css';
 
-export default function BreakingNews() {
+const BreakingNews = ({ title, time }) => {
     return (
         <section className="breaking-news">
-            <span>BREAKING</span>
-            <a href="#">Acclaimed SF bar receives another prestigious accolade</a>
-            <p>5m ago</p>
+            <strong>BREAKING</strong>
+            <a href="#">{title}</a>
+            <time dateTime={`PT${time}M`}>{time}m ago</time>
         </section>
     )
 }
+
+export default BreakingNews;

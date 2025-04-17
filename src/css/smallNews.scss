@@ -1,0 +1,38 @@
+@import 'variables';
+
+.small-news {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $sf_border;
+
+    &__container {
+        margin: 0 1.5rem 0 0;
+    }
+
+    .category {
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 12px;
+        color: $sf_red_title;
+    }
+
+    h3 {
+        font-family: "Big Shoulders", sans-serif; // TODO: fix the font
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0.3rem 0;
+        cursor: pointer;
+    }
+
+    h3:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+
+    img {
+        cursor: pointer;
+        margin-bottom: auto;
+    }
+}

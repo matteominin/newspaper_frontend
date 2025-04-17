@@ -1,14 +1,16 @@
+import { useState } from 'react';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
 import '../css/header.css'
 
-// TODO: fix logo distance from menu
-export default function Header() {
+const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <header>
             <div className="header">
                 <div className="header__left">
-                    <button>
+                    <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <img src={menu} alt="menu icon" />
                     </button>
                     <a href="/" className='logo'>
@@ -57,3 +59,5 @@ export default function Header() {
         </header>
     )
 }
+
+export default Header;

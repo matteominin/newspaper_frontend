@@ -1,12 +1,48 @@
+import Adv from "./components/Adv";
 import BreakingNews from "./components/BreakingNews";
 import Header from "./components/Header";
+import SmallNewsSidebar from "./components/smallNewsSidebar";
+import LatestNews from "./components/LatestNews";
+import BigNews from "./components/BigNews";
+import MediumNews from "./components/MediumNews";
+import ShadowSeparator from "./components/ShadowSeparator";
+import "./app.css";
+import SmallNews from "./components/cards/SmallNews";
+
 
 export default function App() {
   return (
     <div className="app">
       <Header />
-      <BreakingNews title={"Test news"} />
+      <BreakingNews title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"} time={5} />
+      <div className="adv_container">
+        <Adv />
+      </div>
+
+      <section className="main">
+        <SmallNewsSidebar />
+        <section className="main__content">
+          <BigNews category="Food" />
+          <MediumNews />
+          <div className="main__content__adv-container">
+            <Adv /> {/* TODO: Change to video */}
+          </div>
+        </section>
+        <section className="right-sidebar">
+          <div className="right-sidebar__adv-container">
+            <Adv />
+          </div>
+          <LatestNews />
+          <ShadowSeparator title="Deal of the day" />
+          <SmallNews news={{
+            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }} />
+        </section>
+      </section>
+
       <div className="test" style={{ height: "100000px" }}></div>
     </div>
   )
 }
+
+// TODO: check if it's possible to import scss variables only in one file

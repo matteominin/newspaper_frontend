@@ -1,0 +1,27 @@
+.app > .main {
+  flex-direction: row;
+  width: 80%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+}
+
+.adv_container {
+  margin: 2rem auto;
+  width: 80%;
+  height: 200px;
+}
+
+.right-sidebar__adv-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 0 auto 3rem auto;
+}
+
+.main__content__adv-container {
+  border: 1px solid red;
+  width: 100%;
+  grid-column: 1/3;
+  height: 400px;
+}/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,25 @@
+.medium-news {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.medium-news__content {
+  padding: 1rem;
+}
+.medium-news__content h2 {
+  color: rgb(17, 17, 17);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.medium-news__content p {
+  color: rgb(68, 68, 68);
+  margin-bottom: 0.3rem;
+}
+.medium-news__content strong {
+  color: rgb(118, 118, 118);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+  font-size: 11px;
+}/*# sourceMappingURL=mediumNews.css.map */
