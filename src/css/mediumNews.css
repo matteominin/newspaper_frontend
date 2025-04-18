@@ -18,7 +18,7 @@
 }
 .medium-news__content h2 {
   color: rgb(17, 17, 17);
-  font-size: 1.2rem;
+  font-size: 18px;
   margin-bottom: 0.5rem;
 }
 .medium-news__content p {
@@ -30,5 +30,5 @@
   font-weight: 600;
   letter-spacing: 0.5px;
   margin-top: 0.5rem;
-  font-size: 11px;
+  font-size: 14px;
 }/*# sourceMappingURL=mediumNews.css.map */

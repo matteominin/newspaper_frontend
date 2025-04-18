@@ -12,15 +12,15 @@
     }
 
     .category {
+        font-family: "Big Shoulders", sans-serif;
         cursor: pointer;
         font-weight: 900;
-        font-size: 12px;
+        font-size: 14px;
         color: $sf_red_title;
     }
 
     h3 {
-        font-family: "Big Shoulders", sans-serif; // TODO: fix the font
-        font-size: 14px;
+        font-size: 17px;
         font-weight: 700;
         margin: 0.3rem 0;
         cursor: pointer;

@@ -14,12 +14,12 @@
         font-family: "Big Shoulders", sans-serif;
         font-weight: 700;
         border: 1px solid black;
-        font-size: 18px;
+        font-size: 2rem;
         box-shadow: 0 0 0 3px #fff, 0 0 0 6px #000;
         border-radius: 4px;
         background-color: #fff;
         padding: 0.4rem 2rem;
-        margin: -1rem auto 0 auto;
+        margin: -1.5rem auto 0 auto;
         width: fit-content;
     }
 
@@ -29,7 +29,7 @@
         padding: 0 1rem;
 
         article {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 700;
             padding: 1rem 0;
             border-bottom: 1px solid $sf-border;

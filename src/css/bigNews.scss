@@ -18,7 +18,7 @@
             color: white;
             letter-spacing: 3px;
             font-family: "Big Shoulders", sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 900;
             padding: 0.8rem;
             width: min-content;
@@ -32,6 +32,7 @@
         padding: 0.2rem 1rem 2rem 1rem;
 
         h1 {
+            font-size: 2rem;
             color: rgb(17, 17, 17);
             margin-top: 1.2rem;
         }
@@ -43,23 +44,23 @@
 
         &__row {
             background-color: $sf_red_line;
-            height: 3px;
-            width: 15%;
+            height: 4px;
+            width: 25%;
             margin: 1rem 0;
         }
 
         &__text {
             color: rgb(68, 68, 68);
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
+            margin-bottom: 0.5rem;
         }
 
         strong {
             color: rgb(118, 118, 118);
             font-weight: 600;
             letter-spacing: 0.5px;
-            margin-top: 0.5rem;
-            font-size: 11px;
+            font-size: 14px;
         }
     }
 }

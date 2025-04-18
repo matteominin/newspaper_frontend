@@ -9,14 +9,14 @@
   margin: 0 1.5rem 0 0;
 }
 .small-news .category {
+  font-family: "Big Shoulders", sans-serif;
   cursor: pointer;
   font-weight: 900;
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(203, 0, 36);
 }
 .small-news h3 {
-  font-family: "Big Shoulders", sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   margin: 0.3rem 0;
   cursor: pointer;
