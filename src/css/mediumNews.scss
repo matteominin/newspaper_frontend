@@ -37,3 +37,47 @@
         }
     }
 }
+
+@media (max-width: 750px) {
+    .medium-news {
+
+        &__content {
+            width: 50%;
+
+            h2 {
+                font-size: 29px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__image-container {
+            min-width: none;
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .medium-news {
+        flex-direction: column-reverse;
+        margin-top: 1.5rem;
+        margin: 1.5rem 1rem 0 1rem;
+
+        &__content {
+            width: 100%;
+            padding: 0;
+            margin-top: 1rem;
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        &__image-container {
+            width: 100%;
+        }
+    }
+}

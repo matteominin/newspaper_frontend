@@ -53,4 +53,10 @@
   font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 14px;
+}
+
+@media (max-width: 450px) {
+  .big-news__content h1 {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=bigNews.css.map */

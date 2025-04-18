@@ -87,8 +87,8 @@ header .newsletter-mobile {
 }
 @media (max-width: 770px) {
   .header {
-    margin: 1rem;
-    padding-top: 0;
+    margin: 0 1rem 1rem 1rem;
+    padding-top: 1rem;
   }
   .header .logo > img {
     height: 2rem;

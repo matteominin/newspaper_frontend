@@ -36,3 +36,36 @@
         margin-bottom: auto;
     }
 }
+
+@media (max-width: 750px) {
+    .small-news {
+        justify-content: space-between;
+
+        h3 {
+            font-size: 23px;
+        }
+
+        // TODO: Make img 100% height
+        &__img-container {
+            margin-left: 2rem;
+            height: 100%;
+
+            img {
+                display: block;
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .small-news {
+        padding: 0 1rem;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -64,3 +64,13 @@
         }
     }
 }
+
+@media (max-width:450px) {
+    .big-news {
+        &__content {
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

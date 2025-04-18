@@ -28,4 +28,32 @@
 .small-news img {
   cursor: pointer;
   margin-bottom: auto;
+}
+
+@media (max-width: 750px) {
+  .small-news {
+    justify-content: space-between;
+  }
+  .small-news h3 {
+    font-size: 23px;
+  }
+  .small-news__img-container {
+    margin-left: 2rem;
+    height: 100%;
+  }
+  .small-news__img-container img {
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .small-news {
+    padding: 0 1rem;
+  }
+  .small-news h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=smallNews.css.map */

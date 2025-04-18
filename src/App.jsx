@@ -33,10 +33,10 @@ export default function App() {
             <Adv />
           </div>
 
-          <div className="main__editor-picks">
+          <div className="main__content__editor-picks">
             <ShadowSeparator title={"Editor's picks"} />
 
-            <div className="main__editor-picks__content">
+            <div className="main__content__editor-picks__content">
               <EditorPick />
               <EditorPick />
               <EditorPick />
@@ -57,10 +57,9 @@ export default function App() {
           }} />
         </section>
       </section>
-
-      <div className="test" style={{ height: "100000px" }}></div>
     </div>
   )
 }
 
 // TODO: check if it's possible to import scss variables only in one file
+// TODO: change images based on the screen size

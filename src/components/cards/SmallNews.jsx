@@ -7,7 +7,9 @@ const SmallNews = ({ news }) => {
                 {news.category && <div className="category">{news.category}</div>}
                 <h3>{news.title}</h3>
             </div>
-            <img src="https://placehold.co/70x70" alt="placeholder" />
+            <div className="small-news__img-container">
+                <img src="https://placehold.co/70x70" alt="placeholder" />
+            </div>
         </article>
     )
 }

@@ -14,3 +14,35 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 750px) {
+    .editor-pick {
+        border-right: none;
+        border-bottom: 1px solid rgb(204, 204, 204);
+        padding: 0;
+
+        a {
+            font-size: 23px;
+        }
+
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .editor-pick {
+        border-bottom: none;
+
+        h2 {
+            margin: 0 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgb(204, 204, 204);
+        }
+
+        a {
+            font-size: 18px;
+        }
+    }
+}

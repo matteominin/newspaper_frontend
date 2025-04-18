@@ -8,6 +8,7 @@ const MediumNews = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <strong>BY JOHN DOE</strong>
             </div>
+
             <div className="medium-news__image-container">
                 <img src="https://placehold.co/180x180" alt="placeholder" />
             </div>
