@@ -15,3 +15,4 @@ const SmallNews = ({ news }) => {
 }
 
 export default SmallNews;
+// TODO: change image dimensions

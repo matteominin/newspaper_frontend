@@ -53,7 +53,7 @@ export default function App() {
           <LatestNews />
           <ShadowSeparator title="Deal of the day" />
           <SmallNews news={{
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt",
           }} />
         </section>
       </section>
