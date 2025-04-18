@@ -5,6 +5,7 @@
 }
 .big-news__thumbnail {
   position: relative;
+  width: 100%;
 }
 .big-news__thumbnail img {
   width: 100%;

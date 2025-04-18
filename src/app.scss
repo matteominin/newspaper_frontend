@@ -3,7 +3,7 @@
     padding: 0 2rem;
     margin: 3rem auto;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: auto 300px;
     gap: 2.5rem;
 }
 
@@ -15,7 +15,7 @@
 
 .main__content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 300px auto;
     gap: 2.5rem;
     height: min-content;
 }
@@ -59,4 +59,19 @@
 
 .main__editor-picks__content>.editor-pick:first-child {
     padding-left: 0;
+}
+
+@media (max-width: 1050px) {
+    .app .right-sidebar {
+        display: none;
+    }
+
+    .app>.main {
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+
+    .main__adv-container {
+        width: 85%;
+    }
 }
