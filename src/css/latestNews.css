@@ -6,6 +6,7 @@
   border-radius: 4px;
   height: -moz-min-content;
   height: min-content;
+  margin: 0 8px 3rem 8px;
 }
 .latest-news h2 {
   font-family: "Big Shoulders", sans-serif;
@@ -17,7 +18,8 @@
   background-color: #fff;
   padding: 0.4rem 2rem;
   margin: -1rem auto 0 auto;
-  width: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .latest-news__articles {
   margin-top: 0.7rem;

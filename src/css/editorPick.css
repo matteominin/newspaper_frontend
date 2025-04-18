@@ -1,0 +1,13 @@
+.editor-pick {
+  width: 100%;
+  padding: 0 1rem;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+.editor-pick img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.editor-pick h2 {
+  font-size: 16px;
+}/*# sourceMappingURL=editorPick.css.map */

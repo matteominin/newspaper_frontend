@@ -6,10 +6,11 @@
   font-weight: 700;
   font-size: 16px;
   border: 2px solid black;
+  margin: 0 0 8px 8px;
   background-color: white;
   text-align: center;
   width: 7rem;
-  padding: 0.7rem;
+  padding: 0.8rem 0;
   border-radius: 0.5rem;
   box-shadow: -8px 8px 0 0 rgb(255, 29, 70);
 }

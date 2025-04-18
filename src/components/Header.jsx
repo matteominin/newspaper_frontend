@@ -56,6 +56,9 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
+            <a className="newsletter-mobile" href="#">
+                Newsletters
+            </a>
         </header>
     )
 }

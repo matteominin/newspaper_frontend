@@ -6,6 +6,11 @@ header {
     z-index: 1000;
     background-color: #fff;
     border-bottom: 1px solid $sf_border;
+    width: 100vw;
+
+    .newsletter-mobile {
+        display: none;
+    }
 }
 
 .header {
@@ -14,14 +19,17 @@ header {
     flex-direction: row;
     padding-top: 1.5rem;
     margin: 0 auto 1rem auto;
-    max-width: 60rem;
+    max-width: 1200px;
 
     &__left {
         margin: auto 2rem auto 0;
+        display: flex;
+        align-items: center;
 
         button {
             background-color: white;
             margin-right: 0.7rem;
+            align-self: last baseline;
 
             img {
                 width: 1rem;
@@ -30,6 +38,8 @@ header {
         }
 
         .logo {
+            display: block;
+
             img {
                 height: 4.5rem;
             }
@@ -39,6 +49,7 @@ header {
     &__right {
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
         flex: 1;
 
         &__cta {
@@ -66,13 +77,64 @@ header {
 
         ul {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             border-top: 1px solid $sf_border;
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
 
             li {
                 margin: 0.7rem 0;
+                padding: 0 1rem;
+                text-wrap: nowrap;
+
+                a {
+                    width: 100%;
+                }
             }
         }
     }
+}
 
+@media (max-width: 1320px) {
+    .header {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .header {
+        margin: 1rem;
+        padding-top: 0;
+
+        .logo>img {
+            height: 2rem;
+        }
+
+        &__right__cta {
+            margin-bottom: 0;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        align-items: center;
+
+        .newsletter {
+            display: none;
+        }
+    }
+
+    header>.newsletter-mobile {
+        display: block;
+        text-align: center;
+        background-color: $sf_red;
+        color: #fff;
+        padding: 0.5rem 1rem;
+    }
 }

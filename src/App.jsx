@@ -8,6 +8,7 @@ import MediumNews from "./components/MediumNews";
 import ShadowSeparator from "./components/ShadowSeparator";
 import "./app.css";
 import SmallNews from "./components/cards/SmallNews";
+import EditorPick from "./components/EditorPick";
 
 
 export default function App() {
@@ -20,22 +21,39 @@ export default function App() {
       </div>
 
       <section className="main">
-        <SmallNewsSidebar />
         <section className="main__content">
-          <BigNews category="Food" />
-          <MediumNews />
-          <div className="main__content__adv-container">
-            <Adv /> {/* TODO: Change to video */}
+          <SmallNewsSidebar />
+
+          <div>
+            <BigNews category="Food" />
+            <MediumNews />
+          </div>
+
+          <div className="main__adv-container">
+            <Adv />
+          </div>
+
+          <div className="main__editor-picks">
+            <ShadowSeparator title={"Editor's picks"} />
+
+            <div className="main__editor-picks__content">
+              <EditorPick />
+              <EditorPick />
+              <EditorPick />
+            </div>
           </div>
         </section>
+
         <section className="right-sidebar">
+
           <div className="right-sidebar__adv-container">
             <Adv />
           </div>
+
           <LatestNews />
           <ShadowSeparator title="Deal of the day" />
           <SmallNews news={{
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
           }} />
         </section>
       </section>
