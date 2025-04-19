@@ -1,0 +1,77 @@
+@import "variables";
+
+footer {
+    position: relative;
+    display: flex;
+    border-top: 1px solid $sf_border;
+    padding: 4rem 1.5rem;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $sf-border;
+    padding-right: 40px;
+    width: min-content;
+
+    img {
+        width: 2rem;
+        margin: 0 0.5rem 0.25rem 0;
+    }
+
+    .logo {
+        width: max-content;
+        margin: 0;
+        margin-bottom: 1rem;
+        line-height: 1;
+        letter-spacing: -0.1rem;
+        font-family: "Big Shoulders", sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        color: #ff1d46;
+    }
+}
+
+.footer__right {
+    display: flex;
+    padding-left: 40px;
+
+    &__section {
+        margin-right: 40px;
+        height: 100%;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        a {
+            display: block;
+            margin-top: 1.5rem;
+            font-weight: 400;
+        }
+    }
+
+    &__section:last-child {
+        margin-right: 0;
+    }
+}
+
+.scroll-button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+
+    img {
+        transform: rotate(-90deg);
+    }
+}

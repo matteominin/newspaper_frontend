@@ -1,0 +1,69 @@
+footer {
+  position: relative;
+  display: flex;
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 4rem 1.5rem;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(226, 226, 226);
+  padding-right: 40px;
+  width: -moz-min-content;
+  width: min-content;
+}
+.footer__left img {
+  width: 2rem;
+  margin: 0 0.5rem 0.25rem 0;
+}
+.footer__left .logo {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff1d46;
+}
+
+.footer__right {
+  display: flex;
+  padding-left: 40px;
+}
+.footer__right__section {
+  margin-right: 40px;
+  height: 100%;
+}
+.footer__right__section h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__right__section a {
+  display: block;
+  margin-top: 1.5rem;
+  font-weight: 400;
+}
+.footer__right__section:last-child {
+  margin-right: 0;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.scroll-button span {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.scroll-button img {
+  transform: rotate(-90deg);
+}/*# sourceMappingURL=footer.css.map */

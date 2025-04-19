@@ -8,13 +8,16 @@ import MediumNews from "./components/MediumNews";
 import ShadowSeparator from "./components/ShadowSeparator";
 import SmallNews from "./components/cards/SmallNews";
 import EditorPick from "./components/EditorPick";
+import Footer from "./components/Footer";
 import "./app.css";
+import CategorySection from "./components/CategorySection";
 
 
 export default function App() {
   return (
     <div className="app">
       <Header />
+
       <BreakingNews title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"} time={5} />
       <div className="adv_container">
         <Adv />
@@ -33,7 +36,7 @@ export default function App() {
             <Adv />
           </div>
 
-          <div className="main__content__editor-picks">
+          <section className="main__content__editor-picks">
             <ShadowSeparator title={"Editor's picks"} />
 
             <div className="main__content__editor-picks__content">
@@ -41,7 +44,7 @@ export default function App() {
               <EditorPick />
               <EditorPick />
             </div>
-          </div>
+          </section>
         </section>
 
         <section className="right-sidebar">
@@ -57,6 +60,14 @@ export default function App() {
           }} />
         </section>
       </section>
+
+      <div className="long-adv-container">
+        <Adv />
+      </div>
+
+      <CategorySection />
+
+      <Footer />
     </div>
   )
 }
