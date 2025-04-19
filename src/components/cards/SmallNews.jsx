@@ -8,7 +8,7 @@ const SmallNews = ({ news }) => {
                 <h3>{news.title}</h3>
             </div>
             <div className="small-news__img-container">
-                <img src="https://placehold.co/70x70" alt="placeholder" />
+                <img src="https://placehold.co/180x180" alt="placeholder" />
             </div>
         </article>
     )

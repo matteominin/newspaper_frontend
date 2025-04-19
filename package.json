@@ -2,7 +2,6 @@
   "name": "newspaper",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://matteominin.github.io/newspaper-frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",

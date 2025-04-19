@@ -8,8 +8,6 @@ const LatestNews = ({ text }) => {
     )
 }
 
-// TODO: remove last border
-
 const LatestNewsSidebar = () => {
     return (
         <aside className="latest-news">

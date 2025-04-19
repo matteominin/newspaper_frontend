@@ -1,57 +1,53 @@
-import { useState } from 'react';
-import logo from '../assets/logo.svg';
 import menu from '../assets/menu.png';
 import '../css/header.css'
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     return (
         <header>
             <div className="header">
                 <div className="header__left">
-                    <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <button>
                         <img src={menu} alt="menu icon" />
                     </button>
                     <a href="/" className='logo'>
-                        <img src={logo} alt="Logo" />
+                        LOGO
                     </a>
                 </div>
                 <nav className="header__right">
                     <div className="header__right__cta">
-                        <a className="newsletter" href="newsletter">Newsletters</a>
-                        <a className="sign_in" href="sign-in">Sign in</a>
+                        <a className="newsletter" href="#">Newsletters</a>
+                        <a className="sign_in" href="#">Sign in</a>
                     </div>
                     <ul>
                         <li>
-                            <a href="news">News</a>
+                            <a href="#">News</a>
                         </li>
                         <li>
-                            <a href="sport">Sport</a>
+                            <a href="#">Sport</a>
                         </li>
                         <li>
-                            <a href="#local">Local</a>
+                            <a href="#">Local</a>
                         </li>
                         <li>
-                            <a href="#food">Food</a>
+                            <a href="#">Food</a>
                         </li>
                         <li>
-                            <a href="#trave">Trave</a>
+                            <a href="#">Travel</a>
                         </li>
                         <li>
-                            <a href="#culture">Culture</a>
+                            <a href="#">Culture</a>
                         </li>
                         <li>
-                            <a href="#Tahoe">Tahoe</a>
+                            <a href="#">Tahoe</a>
                         </li>
                         <li>
-                            <a href="#calif">Calif.</a>
+                            <a href="#">Calif.</a>
                         </li>
                         <li>
-                            <a href="#national-parks">National Parks</a>
+                            <a href="#">National Parks</a>
                         </li>
                         <li>
-                            <a href="#real-estate">Real Estate</a>
+                            <a href="#">Real Estate</a>
                         </li>
                     </ul>
                 </nav>

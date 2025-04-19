@@ -6,9 +6,9 @@ import LatestNews from "./components/LatestNews";
 import BigNews from "./components/BigNews";
 import MediumNews from "./components/MediumNews";
 import ShadowSeparator from "./components/ShadowSeparator";
-import "./app.css";
 import SmallNews from "./components/cards/SmallNews";
 import EditorPick from "./components/EditorPick";
+import "./app.css";
 
 
 export default function App() {

@@ -34,6 +34,13 @@ header .newsletter-mobile {
 }
 .header__left .logo {
   display: block;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff1d46;
+  margin-top: auto;
+  line-height: 1;
+  letter-spacing: -0.1rem;
 }
 .header__left .logo img {
   height: 4.5rem;
@@ -82,7 +89,7 @@ header .newsletter-mobile {
 
 @media (max-width: 1320px) {
   .header {
-    width: 95vw;
+    width: 95%;
   }
 }
 @media (max-width: 770px) {
@@ -90,11 +97,15 @@ header .newsletter-mobile {
     margin: 0 1rem 1rem 1rem;
     padding-top: 1rem;
   }
-  .header .logo > img {
-    height: 2rem;
+  .header .logo {
+    font-size: 3rem;
+  }
+  .header__right {
+    justify-content: center;
   }
   .header__right__cta {
     margin-bottom: 0;
+    margin-right: 2rem;
   }
   .header ul {
     display: none;

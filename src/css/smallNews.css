@@ -28,6 +28,7 @@
 .small-news img {
   cursor: pointer;
   margin-bottom: auto;
+  width: 100%;
 }
 
 @media (max-width: 750px) {
