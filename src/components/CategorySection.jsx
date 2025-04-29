@@ -3,63 +3,71 @@ import '../css/categorySection.css';
 const CategorySection = () => {
     return (
         <section className="category-section">
-            <h2 className="category-section__category">BAY AREA</h2>
-            <h2 className="category-section__category">TRAVEL</h2>
-            <h2 className="category-section__category">FOOD</h2>
-            <h2 className="category-section__category">LOS ANGELES</h2>
+            <div className="category-group">
+                <h2>BAY AREA</h2>
+                <article>
+                    <img src="https://placehold.co/201x200" alt="placeholder" />
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                </article>
+            </div>
 
-            <article>
-                <img src="https://placehold.co/201x200" alt="placeholder" />
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
-            <article>
-                <img src="https://placehold.co/202x200" alt="placeholder" />
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
-            <article>
-                <img src="https://placehold.co/203x200" alt="placeholder" />
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
-            <article>
-                <img src="https://placehold.co/204x200" alt="placeholder" />
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
+            <div className="category-group">
+                <h2>TRAVEL</h2>
+                <article>
+                    <img src="https://placehold.co/202x200" alt="placeholder" />
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                </article>
+            </div>
 
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                <div className="row"></div>
-            </article>
+            <div className="category-group">
+                <h2>FOOD</h2>
+                <article>
+                    <img src="https://placehold.co/203x200" alt="placeholder" />
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                </article>
+            </div>
 
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-            </article>
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-            </article>
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-            </article>
-            <article>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-            </article>
+            <div className="category-group">
+                <h2>LOS ANGELES</h2>
+                <article>
+                    <img src="https://placehold.co/204x200" alt="placeholder" />
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    <div className="row"></div>
+                </article>
+                <article>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                </article>
+            </div>
         </section>
-    )
-}
+    );
+};
 
 export default CategorySection;

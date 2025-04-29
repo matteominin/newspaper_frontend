@@ -71,6 +71,3 @@ export default function App() {
     </div>
   )
 }
-
-// TODO: check if it's possible to import scss variables only in one file
-// TODO: change images based on the screen size

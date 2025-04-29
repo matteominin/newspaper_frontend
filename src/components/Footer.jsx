@@ -10,7 +10,6 @@ const Footer = () => {
     return (
         <footer>
             <button className="scroll-button" onClick={() => window.scrollTo(0, 0)}>
-                <span>Return To Top</span>
                 <img src={arrow} alt="arrow icon" />
             </button>
             <div className="footer__left">
@@ -27,6 +26,9 @@ const Footer = () => {
             <div className="footer__right">
                 <div className="footer__right__section">
                     <h4>About</h4>
+                    <button>
+                        <img src={arrow} alt="down arrow" />
+                    </button>
                     <a href="#">Our Company</a>
                     <a href="#">Careers</a>
                     <a href="#">Our Use of AI</a>
@@ -34,16 +36,25 @@ const Footer = () => {
                 </div>
                 <div className="footer__right__section">
                     <h4>Contact</h4>
+                    <button>
+                        <img src={arrow} alt="down arrow" />
+                    </button>
                     <a href="#">Newsroom Contacts</a>
                 </div>
                 <div className="footer__right__section">
                     <h4>Services</h4>
+                    <button>
+                        <img src={arrow} alt="down arrow" />
+                    </button>
                     <a href="#">Advertise with us</a>
                     <a href="#">Classifieds</a>
                     <a href="#">Recruitment</a>
                 </div>
                 <div className="footer__right__section">
                     <h4>Quick Links</h4>
+                    <button>
+                        <img src={arrow} alt="down arrow" />
+                    </button>
                     <a href="#">Cars</a>
                     <a href="#">Jobs</a>
                     <a href="#">Weather</a>
@@ -55,5 +66,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-// TODO: Responsive design

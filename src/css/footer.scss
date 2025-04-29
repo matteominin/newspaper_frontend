@@ -3,8 +3,30 @@
 footer {
     position: relative;
     display: flex;
+    justify-content: center;
     border-top: 1px solid $sf_border;
     padding: 4rem 1.5rem;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        transform: rotate(-90deg);
+    }
+}
+
+.scroll-button::before {
+    content: "Return To Top";
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 1rem;
 }
 
 .footer__left {
@@ -36,6 +58,10 @@ footer {
     display: flex;
     padding-left: 40px;
 
+    button {
+        display: none;
+    }
+
     &__section {
         margin-right: 40px;
         height: 100%;
@@ -57,21 +83,54 @@ footer {
     }
 }
 
-.scroll-button {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    span {
-        font-weight: 600;
-        margin-right: 0.5rem;
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+        margin-bottom: 2rem;
     }
 
-    img {
-        transform: rotate(-90deg);
+    .scroll-button::before {
+        content: "Top";
+    }
+
+    .footer__left {
+        border: none;
+        width: auto;
+    }
+
+    .footer__right {
+        flex-direction: column;
+        padding: 0;
+
+        h4 {
+            font-size: 1.25rem;
+            padding: 1rem 0;
+        }
+
+        &__section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $sf-border;
+            margin: 0;
+
+            button {
+                display: block;
+                background-color: transparent;
+                padding: 1rem;
+                cursor: pointer;
+
+                img {
+                    transform: rotate(90deg);
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+
+            a {
+                display: none;
+            }
+        }
     }
 }

@@ -1,46 +1,60 @@
 .category-section {
     width: 100%;
+    max-width: 1200px;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    column-gap: 3rem;
-    margin-bottom: 3rem;
+    gap: 3rem;
+    margin: 0 auto 3rem auto;
 
-    h2 {
-        margin-bottom: 1rem;
-        font-family: 'Big Shoulders', sans-serif;
-        font-size: 2.3rem;
-        letter-spacing: 0.75px;
-        font-weight: 500;
-        background-color: rgba(255, 29, 70, 0.2);
-        box-shadow: inset 8px 16px #fff;
-        width: min-content;
-        text-wrap: nowrap;
-        padding-right: 0.5rem;
-    }
+    .category-group {
+        display: flex;
+        flex-direction: column;
 
-    h3 {
-        font-size: 18px;
-        font-weight: 700;
-    }
+        h2 {
+            margin-bottom: 1rem;
+            font-family: 'Big Shoulders', sans-serif;
+            font-size: 2.3rem;
+            letter-spacing: 0.75px;
+            font-weight: 500;
+            background-color: rgba(255, 29, 70, 0.2);
+            box-shadow: inset 8px 16px #fff;
+            width: min-content;
+            white-space: nowrap;
+            padding-right: 0.5rem;
+        }
 
-    .row {
-        height: 1px;
-        width: 100%;
-        background-color: rgb(204, 204, 204);
-        margin: 1rem 0;
-    }
+        article {
+            margin-bottom: 1rem;
 
-    img {
-        width: 100%;
-        margin-bottom: 0.5rem;
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .row {
+                height: 1px;
+                width: 100%;
+                background-color: rgb(204, 204, 204);
+                margin: 1rem 0;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
     }
 }
 
 @media (max-width: 950px) {
     .category-section {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media (max-width: 600px) {
+    .category-section {
+        grid-template-columns: 1fr;
     }
 }

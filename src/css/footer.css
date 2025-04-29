@@ -1,8 +1,29 @@
 footer {
   position: relative;
   display: flex;
+  justify-content: center;
   border-top: 1px solid rgb(226, 226, 226);
   padding: 4rem 1.5rem;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.scroll-button img {
+  transform: rotate(-90deg);
+}
+
+.scroll-button::before {
+  content: "Return To Top";
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 1rem;
 }
 
 .footer__left {
@@ -34,6 +55,9 @@ footer {
   display: flex;
   padding-left: 40px;
 }
+.footer__right button {
+  display: none;
+}
 .footer__right__section {
   margin-right: 40px;
   height: 100%;
@@ -51,19 +75,46 @@ footer {
   margin-right: 0;
 }
 
-.scroll-button {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+@media (max-width: 900px) {
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .scroll-button::before {
+    content: "Top";
+  }
+  .footer__left {
+    border: none;
+    width: auto;
+  }
+  .footer__right {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer__right h4 {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+  }
+  .footer__right__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    margin: 0;
+  }
+  .footer__right__section button {
+    display: block;
+    background-color: transparent;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .footer__right__section button img {
+    transform: rotate(90deg);
+    width: 1rem;
+    height: 1rem;
+  }
+  .footer__right__section a {
+    display: none;
+  }
 }
-.scroll-button span {
-  font-weight: 600;
-  margin-right: 0.5rem;
-}
-.scroll-button img {
-  transform: rotate(-90deg);
-}/*# sourceMappingURL=footer.css.map */
