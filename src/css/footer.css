@@ -123,6 +123,7 @@ footer a:hover {
     display: block;
     background-color: transparent;
     padding: 1rem;
+    transform: rotate(90deg);
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -139,7 +140,7 @@ footer a:hover {
     padding-bottom: 2rem;
   }
   .footer__right .active button img {
-    transform: rotate(270deg);
+    transform: rotate(180deg);
   }
   .footer__right .active a {
     display: block;

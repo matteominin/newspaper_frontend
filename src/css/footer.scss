@@ -137,6 +137,7 @@ footer {
                 display: block;
                 background-color: transparent;
                 padding: 1rem;
+                transform: rotate(90deg);
                 cursor: pointer;
                 position: absolute;
                 right: 0;
@@ -157,7 +158,7 @@ footer {
 
             button {
                 img {
-                    transform: rotate(270deg);
+                    transform: rotate(180deg);
                 }
             }
 
