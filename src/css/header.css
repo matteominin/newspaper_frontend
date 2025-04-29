@@ -1,4 +1,4 @@
-header {
+.menu {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -6,7 +6,7 @@ header {
   border-bottom: 1px solid rgb(226, 226, 226);
   width: 100vw;
 }
-header .newsletter-mobile {
+.menu .newsletter-mobile {
   display: none;
 }
 
@@ -41,6 +41,9 @@ header .newsletter-mobile {
   margin-top: auto;
   line-height: 1;
   letter-spacing: -0.1rem;
+}
+.header__left .logo:hover {
+  opacity: 1;
 }
 .header__right {
   display: flex;
@@ -82,6 +85,10 @@ header .newsletter-mobile {
 }
 .header__right ul li a {
   width: 100%;
+}
+.header a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 @media (max-width: 1320px) {

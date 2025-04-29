@@ -24,6 +24,7 @@
         }
 
         p {
+            font-weight: normal;
             color: rgb(68, 68, 68);
             margin-bottom: 0.3rem;
         }
@@ -36,6 +37,12 @@
             font-size: 14px;
         }
     }
+}
+
+h2:hover,
+p:hover {
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 @media (max-width: 750px) {

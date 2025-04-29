@@ -3,7 +3,7 @@ import '../css/shadowSeparator.css';
 const ShadowSeparator = ({ title }) => {
     return (
         <section className="shadow-separator">
-            <h3>{title.toUpperCase()}</h3>
+            <h2>{title.toUpperCase()}</h2>
             <div className="row"></div>
         </section>
     )

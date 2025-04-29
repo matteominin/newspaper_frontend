@@ -3,7 +3,7 @@ import '../css/latestNews.css';
 const LatestNews = ({ text }) => {
     return (
         <article>
-            {text}
+            <a href="#">{text}</a>
         </article>
     )
 }

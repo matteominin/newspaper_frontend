@@ -2,14 +2,16 @@ import '../../css/SmallNews.css'
 
 const SmallNews = ({ news }) => {
     return (
-        <article className="small-news">
-            <div className="small-news__container">
-                {news.category && <div className="category">{news.category}</div>}
-                <h3>{news.title}</h3>
-            </div>
-            <div className="small-news__img-container">
-                <img src="https://placehold.co/180x180" alt="placeholder" />
-            </div>
+        <article>
+            <a className="small-news" href="#">
+                <div className="small-news__container">
+                    {news.category && <span className="category">{news.category}</span>}
+                    <h2>{news.title}</h2>
+                </div>
+                <div className="small-news__img-container">
+                    <img src="https://placehold.co/250x250" alt="placeholder" />
+                </div>
+            </a>
         </article>
     )
 }

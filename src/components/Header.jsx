@@ -3,7 +3,7 @@ import '../css/header.css'
 
 const Header = () => {
     return (
-        <header>
+        <header className="menu">
             <div className="header">
                 <div className="header__left">
                     <button>
