@@ -27,10 +27,10 @@ export default function App() {
         <section className="main__content">
           <SmallNewsSidebar />
 
-          <div>
+          <main>
             <BigNews category="Food" />
             <MediumNews />
-          </div>
+          </main>
 
           <div className="main__adv-container">
             <Adv />
@@ -54,10 +54,12 @@ export default function App() {
           </div>
 
           <LatestNews />
-          <ShadowSeparator title="Deal of the day" />
-          <SmallNews news={{
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt",
-          }} />
+          <aside>
+            <ShadowSeparator title="Deal of the day" />
+            <SmallNews news={{
+              title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt",
+            }} />
+          </aside>
         </section>
       </section>
 
